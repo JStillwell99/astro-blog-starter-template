@@ -3,76 +3,128 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stillwell’s</title>
+    <title>JDBB</title>
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7fa;
-            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            background: #0b0b0c;
+            color: #e6e6e6;
         }
+
         header {
-            background: #0d1b2a;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.6);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(10px);
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 3px;
+            font-weight: 700;
+            color: #fff;
+        }
+
         .hero {
-            padding: 80px 20px;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            background: #e9eef3;
+            position: relative;
         }
-        .hero h1 {
-            font-size: 42px;
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero-content h2 {
+            font-size: 64px;
             margin-bottom: 10px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 700;
         }
-        .hero p {
-            font-size: 18px;
-            color: #555;
+
+        .hero-content p {
+            font-size: 20px;
+            opacity: 0.9;
         }
+
         .section {
-            padding: 40px 20px;
+            padding: 80px 40px;
             max-width: 900px;
             margin: auto;
         }
+
+        .section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
         .footer {
-            background: #0d1b2a;
-            color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+            padding: 25px;
+            background: #000;
+            color: #777;
+            margin-top: 60px;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h2>Stillwell’s</h2>
+    <h1>JDBB</h1>
 </header>
 
 <div class="hero">
-    <h1>Professional Solutions. Local Expertise.</h1>
-    <p>Stillwell’s provides reliable, straightforward services with a focus on quality and trust.</p>
+    <div class="hero-content">
+        <h2>Strength. Precision. Presence.</h2>
+        <p>JDBB delivers modern solutions with an edge — built for those who lead, not follow.</p>
+    </div>
 </div>
 
 <div class="section">
-    <h2>About</h2>
+    <h3>About JDBB</h3>
     <p>
-        Stillwell’s is built on a commitment to professionalism, integrity, and results.
-        Whether you're looking to expand, improve, or streamline, we deliver solutions that work.
+        JDBB represents a commitment to excellence, discipline, and forward‑thinking execution.
+        Whether you're building, scaling, or refining, JDBB stands for power and precision.
     </p>
 </div>
 
 <div class="section">
-    <h2>Contact</h2>
-    <p>Email: Stillwell@jdbb.us</p>
+    <h3>Contact</h3>
+    <p>Email: contact@jdbb.us</p>
 </div>
 
 <div class="footer">
-    © 2026 Stillwell’s — All Rights Reserved
+    © 2026 JDBB — All Rights Reserved
 </div>
 
 </body>
 </html>
-
-
